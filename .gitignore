@@ -1,0 +1,57 @@
+# ========================================================
+# EuroSAT Satellite Image Classification - .gitignore
+# ========================================================
+
+# --- Datasets ---
+# Excluded from git history to keep repository lightweight and fast.
+# Curated sample images for testing are preserved in `samples/`.
+data/
+public_test_data/
+saves/
+
+# --- Byte-compiled / optimized files ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# --- Virtual Environments ---
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# --- Jupyter Notebook Checkpoints ---
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# --- Testing & Coverage ---
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+nosetests.xml
+coverage.xml
+*.cover
+
+# --- Operating System Files ---
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+[Dd]esktop.ini
+
+# --- IDEs and Editors ---
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# --- Logs ---
+*.log

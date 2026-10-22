@@ -1,0 +1,50 @@
+# Git
+.git
+.gitignore
+.github
+
+# Python caches & virtual environments
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Jupyter
+.ipynb_checkpoints
+K12515096.ipynb
+
+# Datasets (large files excluded from image build)
+data/
+public_test_data/
+saves/
+
+# Tests & Coverage
+tests/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Operating system
+.DS_Store
+Thumbs.db
+*.log

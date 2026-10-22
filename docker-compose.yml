@@ -1,0 +1,18 @@
+version: "3.8"
+
+services:
+  eurosat-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: eurosat-classifier:latest
+    container_name: eurosat-satellite-classifier
+    ports:
+      - "8501:8501"
+    restart: unless-stopped
+    volumes:
+      # Optional: bind mount samples or app for live local adjustments without rebuild
+      - ./samples:/workspace/samples:ro
+    environment:
+      - STREAMLIT_SERVER_PORT=8501
+      - STREAMLIT_SERVER_ADDRESS=0.0.0.0
